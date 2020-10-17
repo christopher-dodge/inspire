@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import QuoteButton from './Components/QuoteButton';
 
 function App() {
+  // const [quote, setQuote] = useState('');
+
+  // Click handler method
+  // const handleButtonClick = function(){
+
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello There, This is the Genie</h1>
     </div>
   );
 }
