@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import QuoteButton from './Components/QuoteButton';
+import QuoteButton from './Components/QuoteButton';
 
 function App() {
   // const [quote, setQuote] = useState('');
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello There, This is the Genie</h1>
+      <QuoteButton />
     </div>
   );
 }
