@@ -1,13 +1,15 @@
 import React from 'react';
 import {Button} from '@material-ui/core';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 export default function QuoteButton() {
-  // const [quote, setQuote] = useState('');
+  const [quote, setQuote] = useState("");
 
   // Click handler method
   const handleButtonClick = function(){
     console.log('The button was clicked!');
+    setQuote("'Come get some' -Duke Nukem");
+    console.log(quote);
   }
 
   return (
@@ -15,7 +17,6 @@ export default function QuoteButton() {
       <Button variant="contained" color="secondary" onClick={handleButtonClick}>
         Genie, Inspire Me
       </Button>
-      
     </div>
   )
 }

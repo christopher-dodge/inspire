@@ -1,2 +1,2 @@
-export {default} from './QuoteButton';
-export {default} from './Quote';
+export {default} from './QuoteButton/QuoteButton';
+export {default} from './Quote/Quote';
