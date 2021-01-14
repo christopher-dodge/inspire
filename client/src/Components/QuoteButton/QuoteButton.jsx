@@ -5,7 +5,7 @@ export default function QuoteButton({getRandomQuote}) {
 
   return (
     <div>
-      <div class="center">
+      <div className="center">
         <Button variant="contained" color="secondary" onClick={getRandomQuote}>
           Genie, Inspire Me
         </Button>

@@ -38,8 +38,6 @@ function App() {
     
   }, [])
 
-  // Need to use useEffect to connect QuoteButton click to change the actual quote in Quote?
-
   return (
     <Router>
       <div className="App">
