@@ -1,22 +1,15 @@
 // INSPIRE APP 1.0
 const   express           = require('express'),
-        mongoose          = require('mongoose'),
         dotenv            = require('dotenv').config(),
         port              = process.env.PORT || 9001,
         morgan            = require('morgan'),
         path              = require('path'),
-        testAPIRouter     = require('./routes/api'),
+        api               = require('./routes/api'),
         connectToDatabase = require('./database/connection'),
         app               = express();
 
 // Database connection
 connectToDatabase();
-
-// Mongoose Schema
-const QuoteSchema = new mongoose.Schema({
-  author: String,
-  body: String
-});
 
 // Tell node where to serve static files from
 app.use(express.static(path.join(__dirname, '../client/public')));
@@ -25,6 +18,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/public/index.html'));
 });
+
+app.use('/api', api);
 
 // Server
 app.listen(port, () => {
