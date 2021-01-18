@@ -50,7 +50,9 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div 
+        className="App"
+        >
         <Switch>
           { !showQuote && <Route path="/" exact component={() => <Splash getRandomQuote={getRandomQuote} />} /> }
           { showQuote && <Route path="/" component={() => <Quote quote={quote} getRandomQuote={getRandomQuote} /> } /> }
