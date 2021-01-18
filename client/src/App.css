@@ -3,11 +3,12 @@
 }
 
 .bgTest {
-  background-color: red;
+  /* background-color: red; */
 }
 
 .center {
-  color: pink;
+  /* color: pink; */
+  color: rgb(242 16 90);
   margin: 0;
   position: absolute;
   top: 50%;
