@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.bgTest {
+  background-color: red;
+}
+
 .center {
   color: pink;
   margin: 0;
@@ -9,4 +13,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  text-align: center;
+}
+
+.message {
+  display: inline-block;
+  border: solid .1rem #666666;
+  color: #666666;
+  font-size: 12px;
+  line-height: 32px;
+  border-radius: 10.5px;
+  padding: 0 16px;
 }
