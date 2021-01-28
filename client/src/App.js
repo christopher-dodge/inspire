@@ -52,6 +52,11 @@ function App() {
     <Router>
       <div 
         className="App"
+        style={{
+          background: 'linear-gradient(to bottom, #bdc3c7, #2c3e50)',
+          width: '100%',
+          height: '100vh'
+        }}
         >
         <Switch>
           { !showQuote && <Route path="/" exact component={() => <Splash getRandomQuote={getRandomQuote} />} /> }
