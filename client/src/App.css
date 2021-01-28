@@ -2,13 +2,9 @@
   text-align: center;
 }
 
-.bgTest {
-  /* background-color: red; */
-}
-
 .center {
-  /* color: pink; */
-  color: rgb(242 16 90);
+  color: white;
+  /* color: rgb(242 16 90); */
   margin: 0;
   position: absolute;
   top: 50%;
@@ -26,8 +22,8 @@
 
 .message {
   display: inline-block;
-  border: solid .1rem #666666;
-  color: #666666;
+  border: solid .1rem #000;
+  color: #000;
   font-size: 12px;
   line-height: 32px;
   border-radius: 10.5px;
