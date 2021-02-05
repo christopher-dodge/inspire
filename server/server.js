@@ -23,7 +23,7 @@ connectToDatabase();
 
 // Find all quotes and return total count
 const allQuotes = {};
-Quote.find(allQuotes).then((quotes) => console.log(`Found ${quotes.length}`));
+Quote.find(allQuotes).then((quotes) => console.log(`Found ${quotes.length} quotes in the database`));
 
 // Tell node where to serve static files from
 app.use(express.static(path.join(__dirname, '../client/public')));

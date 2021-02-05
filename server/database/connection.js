@@ -3,7 +3,7 @@ const URI               = getConnectionURI();
 
 // Get URI
 function getConnectionURI() {
-  console.log(process.env.NODE_ENV);
+  console.log(`Loading ${process.env.NODE_ENV} environments`);
 
   // check for stating
   if (process.env.NODE_ENV === "development") {
@@ -23,7 +23,7 @@ async function connectToMongoClient(){
       useUnifiedTopology: true
     });
 
-    console.log(`Connected to ${URI}`);
+    // console.log(`Connected to ${URI}`);
 
     return Promise.resolve(true);
   } catch (e) {
