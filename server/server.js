@@ -2,6 +2,7 @@
 const   express           = require('express'),
         dotenv            = require('dotenv').config(),
         port              = process.env.PORT || 9001,
+        mongoose          = require('mongoose'),
         morgan            = require('morgan'),
         path              = require('path'),
         api               = require('./routes/api'),
