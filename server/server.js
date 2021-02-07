@@ -1,5 +1,3 @@
-const Quote = require('./models/Quote');
-
 // INSPIRE APP 1.0
 const   express           = require('express'),
         dotenv            = require('dotenv').config(),
@@ -8,6 +6,7 @@ const   express           = require('express'),
         path              = require('path'),
         api               = require('./routes/api'),
         connectToDatabase = require('./database/connection'),
+        Quote             = require('./models/Quote'),
         app               = express();
 
 // Database connection
