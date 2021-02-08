@@ -26,11 +26,11 @@ const allQuotes = {};
 Quote.find(allQuotes).then((quotes) => console.log(`Found ${quotes.length} quotes in the database`));
 
 // Tell node where to serve static files from
-app.use(express.static(path.join(__dirname, '../client/public')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
 app.use('/api', api);
