@@ -17,7 +17,7 @@
     "start": "if-env NODE_ENV=production && yarn start:prod || yarn start:dev",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn client\"",
     "start:prod": "node server/server.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "yarn run build"
   },
   "author": "Christopher Dodge <dodge.christopher@icloud.com>",
   "license": "MIT",
