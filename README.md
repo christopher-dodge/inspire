@@ -1,7 +1,9 @@
 # Inspire
 Inspire is a simple single page app that generates a random quote from a database in order to give inspiration.
 
-MPV: A landing page that has a prompt to click anywhere and when clicked a random quote is generated and displayed in the center of the screen with a different randomly generated background color each time.
+MPV: Single page app with button that generates a random quote each time clicked.
+
+## [deployed site here](https://inspire-quote-gen.herokuapp.com/)
 
 ## Getting started
 This project requires the following:
