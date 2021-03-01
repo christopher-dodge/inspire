@@ -50,16 +50,16 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    
       <div 
         className="App"
         >
-        <Switch>
-          { !showQuote && <Route path="/" exact component={() => <QuoteButton getRandomQuote={getRandomQuote} />} /> }
-          { showQuote && <Route path="/" component={() => <Quote quote={quote} getRandomQuote={getRandomQuote} /> } /> }
-        </Switch>
+        
+          <QuoteButton getRandomQuote={getRandomQuote} />
+          { showQuote && <Quote quote={quote} getRandomQuote={getRandomQuote} /> }
+        
       </div>
-    </Router>
+    
   );
 }
 
