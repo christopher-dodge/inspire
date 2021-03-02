@@ -7,7 +7,6 @@
 }
 
 .center {
-  /* color: pink; */
   color: rgb(242 16 90);
   margin: 0;
   position: absolute;
@@ -16,7 +15,7 @@
   transform: translate(-50%, -50%);
 }
 
-#hint {
+#quote-container {
   position: absolute;
   left: 0;
   right: 0;
@@ -24,12 +23,9 @@
   text-align: center;
 }
 
-.message {
+.quote-text {
+  max-width: 50%;
   display: inline-block;
-  border: solid .1rem #666666;
-  color: #666666;
-  font-size: 12px;
+  color: rgb(242 16 90);
   line-height: 32px;
-  border-radius: 10.5px;
-  padding: 0 16px;
 }

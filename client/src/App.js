@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import API from './utils/API';
 import Quote from './Components/Quote/Quote';
+import QuoteButton from './Components/QuoteButton/QuoteButton';
 import Splash from './Pages/Splash/Splash';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
@@ -49,16 +50,12 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div 
-        className="App"
-        >
-        <Switch>
-          { !showQuote && <Route path="/" exact component={() => <Splash getRandomQuote={getRandomQuote} />} /> }
-          { showQuote && <Route path="/" component={() => <Quote quote={quote} getRandomQuote={getRandomQuote} /> } /> }
-        </Switch>
+    
+      <div className="App">
+          <QuoteButton getRandomQuote={getRandomQuote} />
+          { showQuote && <Quote quote={quote} getRandomQuote={getRandomQuote} /> }
       </div>
-    </Router>
+    
   );
 }
 
