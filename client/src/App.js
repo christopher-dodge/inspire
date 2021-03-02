@@ -51,13 +51,9 @@ function App() {
 
   return (
     
-      <div 
-        className="App"
-        >
-        
+      <div className="App">
           <QuoteButton getRandomQuote={getRandomQuote} />
           { showQuote && <Quote quote={quote} getRandomQuote={getRandomQuote} /> }
-        
       </div>
     
   );

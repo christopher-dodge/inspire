@@ -24,9 +24,8 @@
 }
 
 .quote-text {
+  max-width: 50%;
   display: inline-block;
   color: rgb(242 16 90);
-  /* font-size: 12px; */
-  /* line-height: 32px;
-  padding: 0 16px; */
+  line-height: 32px;
 }
