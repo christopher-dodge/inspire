@@ -52,8 +52,10 @@ function App() {
   return (
     
       <div className="App">
-          <QuoteButton getRandomQuote={getRandomQuote} />
+        <div id="main-display">
           { showQuote && <Quote quote={quote} getRandomQuote={getRandomQuote} /> }
+          <QuoteButton getRandomQuote={getRandomQuote} />
+        </div>
       </div>
     
   );
