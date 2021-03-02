@@ -4,8 +4,8 @@ export default function Quote(props) {
   console.log(props);
 
   return (
-    <div onClick={props.getRandomQuote}>
-      <div className="center">
+    <div onClick={props.getRandomQuote} id="quote-container">
+      <div className="quote-text">
         <h2>{props.quote.Quote}</h2>
         <h5>{props.quote.Author}</h5>
       </div>
