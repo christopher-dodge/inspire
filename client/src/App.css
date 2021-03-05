@@ -18,6 +18,12 @@
   transform: translate(-50%, -50%);
 }
 
+/* Temp styling for dev - find a better way for dep */
+.MuiAppBar-colorPrimary {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 /* .center {
   color: rgb(242 16 90);
   margin: 0;
