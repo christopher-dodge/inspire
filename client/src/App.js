@@ -5,6 +5,7 @@ import QuoteButton from './Components/QuoteButton/QuoteButton';
 import Splash from './Pages/Splash/Splash';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   // Hard-coded seed quotes for testing
@@ -50,13 +51,13 @@ function App() {
   }, []);
 
   return (
-    
-      <div className="App">
-        <div id="main-display">
-          { showQuote && <Quote quote={quote} getRandomQuote={getRandomQuote} /> }
-          <QuoteButton getRandomQuote={getRandomQuote} />
-        </div>
+    <div className="App">
+      <Navbar />
+      <div id="main-display">
+        { showQuote && <Quote quote={quote} getRandomQuote={getRandomQuote} /> }
+        <QuoteButton getRandomQuote={getRandomQuote} />
       </div>
+    </div>
     
   );
 }
